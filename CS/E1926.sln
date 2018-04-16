@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismSupportSample", "PrismSupportSample\PrismSupportSample.csproj", "{EA19FFAE-FF46-4FB3-953B-DC502768685E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modules.Main", "Modules.Main\Modules.Main.csproj", "{4F099A4F-DEA9-4DC9-9E93-52C95CEE1A64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA19FFAE-FF46-4FB3-953B-DC502768685E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA19FFAE-FF46-4FB3-953B-DC502768685E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA19FFAE-FF46-4FB3-953B-DC502768685E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA19FFAE-FF46-4FB3-953B-DC502768685E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F099A4F-DEA9-4DC9-9E93-52C95CEE1A64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F099A4F-DEA9-4DC9-9E93-52C95CEE1A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F099A4F-DEA9-4DC9-9E93-52C95CEE1A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F099A4F-DEA9-4DC9-9E93-52C95CEE1A64}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
