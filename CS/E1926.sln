@@ -1,0 +1,77 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismSupportSample", "PrismSupportSample\PrismSupportSample.csproj", "{EA19FFAE-FF46-4FB3-953B-DC502768685E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{50797623-ADCB-4B99-B48D-10EF6855184C} = {50797623-ADCB-4B99-B48D-10EF6855184C}
+		{ADA3642A-8384-4532-B1EE-4F3ED8EABB00} = {ADA3642A-8384-4532-B1EE-4F3ED8EABB00}
+		{6664C05A-BEC9-4A21-B4F4-2E3E25E3938E} = {6664C05A-BEC9-4A21-B4F4-2E3E25E3938E}
+		{0F0E3CD4-025E-4221-9679-10E8977D9CB6} = {0F0E3CD4-025E-4221-9679-10E8977D9CB6}
+		{8BF030E0-1C4B-49C5-91D2-009B7C2F5736} = {8BF030E0-1C4B-49C5-91D2-009B7C2F5736}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modules.Infrastructure", "Modules.Infrastructure\Modules.Infrastructure.csproj", "{AD494C01-226D-47CC-8CB5-C68E74A783B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modules.TeamList", "Modules.TeamList\Modules.TeamList.csproj", "{6664C05A-BEC9-4A21-B4F4-2E3E25E3938E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AD494C01-226D-47CC-8CB5-C68E74A783B9} = {AD494C01-226D-47CC-8CB5-C68E74A783B9}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modules.Contacts", "Modules.Contact\Modules.Contacts.csproj", "{8BF030E0-1C4B-49C5-91D2-009B7C2F5736}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AD494C01-226D-47CC-8CB5-C68E74A783B9} = {AD494C01-226D-47CC-8CB5-C68E74A783B9}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modules.Stuff", "Modules.Staff\Modules.Stuff.csproj", "{ADA3642A-8384-4532-B1EE-4F3ED8EABB00}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AD494C01-226D-47CC-8CB5-C68E74A783B9} = {AD494C01-226D-47CC-8CB5-C68E74A783B9}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modules.Projects", "Modules.Projects\Modules.Projects.csproj", "{0F0E3CD4-025E-4221-9679-10E8977D9CB6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AD494C01-226D-47CC-8CB5-C68E74A783B9} = {AD494C01-226D-47CC-8CB5-C68E74A783B9}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modules.Chart", "Modules.Chart\Modules.Chart.csproj", "{50797623-ADCB-4B99-B48D-10EF6855184C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AD494C01-226D-47CC-8CB5-C68E74A783B9} = {AD494C01-226D-47CC-8CB5-C68E74A783B9}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA19FFAE-FF46-4FB3-953B-DC502768685E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA19FFAE-FF46-4FB3-953B-DC502768685E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA19FFAE-FF46-4FB3-953B-DC502768685E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA19FFAE-FF46-4FB3-953B-DC502768685E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD494C01-226D-47CC-8CB5-C68E74A783B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD494C01-226D-47CC-8CB5-C68E74A783B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD494C01-226D-47CC-8CB5-C68E74A783B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD494C01-226D-47CC-8CB5-C68E74A783B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6664C05A-BEC9-4A21-B4F4-2E3E25E3938E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6664C05A-BEC9-4A21-B4F4-2E3E25E3938E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6664C05A-BEC9-4A21-B4F4-2E3E25E3938E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6664C05A-BEC9-4A21-B4F4-2E3E25E3938E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BF030E0-1C4B-49C5-91D2-009B7C2F5736}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BF030E0-1C4B-49C5-91D2-009B7C2F5736}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BF030E0-1C4B-49C5-91D2-009B7C2F5736}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF030E0-1C4B-49C5-91D2-009B7C2F5736}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADA3642A-8384-4532-B1EE-4F3ED8EABB00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADA3642A-8384-4532-B1EE-4F3ED8EABB00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADA3642A-8384-4532-B1EE-4F3ED8EABB00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADA3642A-8384-4532-B1EE-4F3ED8EABB00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F0E3CD4-025E-4221-9679-10E8977D9CB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F0E3CD4-025E-4221-9679-10E8977D9CB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F0E3CD4-025E-4221-9679-10E8977D9CB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F0E3CD4-025E-4221-9679-10E8977D9CB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50797623-ADCB-4B99-B48D-10EF6855184C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50797623-ADCB-4B99-B48D-10EF6855184C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50797623-ADCB-4B99-B48D-10EF6855184C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50797623-ADCB-4B99-B48D-10EF6855184C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

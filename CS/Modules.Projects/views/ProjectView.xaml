@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="Modules.Projects.ProjectView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:Modules.Projects">
+    <Border DataContext="{x:Static local:ProjectView.Controller}">
+        <ListBox x:Name="ProjectList" ItemsSource="{Binding SelectedTeam.Projects}" SelectedItem="0" SelectionChanged="ProjectList_SelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Title}" FontWeight="Bold" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Issues total" />
+                            <TextBlock Text="{Binding IssuesTotal}" Margin="5,0,0,0" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Bugs total" />
+                            <TextBlock Text="{Binding BugsTotal}" Margin="5,0,0,0" />
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Border>
+</UserControl>
