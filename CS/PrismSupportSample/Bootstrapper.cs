@@ -1,11 +1,11 @@
 ﻿using System.Windows;
 using DevExpress.Xpf.Docking;
+using DevExpress.Xpf.Prism;
 using Microsoft.Practices.ServiceLocation;
-using Prism.Unity;
+using Modules.Main;
 using Prism.Modularity;
 using Prism.Regions;
-using DevExpress.Xpf.Prism;
-using Modules.Main;
+using Prism.Unity;
 
 namespace PrismSupportSample {
     class Bootstrapper : UnityBootstrapper {

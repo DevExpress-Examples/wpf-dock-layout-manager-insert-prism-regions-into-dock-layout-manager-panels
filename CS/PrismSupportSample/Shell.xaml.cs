@@ -1,5 +1,4 @@
 ﻿using DevExpress.Xpf.Core;
-using DevExpress.Xpf.Docking;
 
 namespace PrismSupportSample {
     /// <summary>
