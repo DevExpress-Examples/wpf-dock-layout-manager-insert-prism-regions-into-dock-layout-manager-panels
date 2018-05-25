@@ -1,11 +1,11 @@
 ﻿Imports System.Windows
 Imports DevExpress.Xpf.Docking
+Imports DevExpress.Xpf.Prism
 Imports Microsoft.Practices.ServiceLocation
-Imports Prism.Unity
+Imports Modules.Main
 Imports Prism.Modularity
 Imports Prism.Regions
-Imports DevExpress.Xpf.Prism
-Imports Modules.Main
+Imports Prism.Unity
 
 Namespace PrismSupportSample
     Friend Class Bootstrapper

@@ -1,5 +1,4 @@
 ﻿Imports DevExpress.Xpf.Core
-Imports DevExpress.Xpf.Docking
 
 Namespace PrismSupportSample
     ''' <summary>

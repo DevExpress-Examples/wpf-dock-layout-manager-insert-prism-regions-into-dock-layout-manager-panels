@@ -1,10 +1,7 @@
-﻿Imports Prism.Modularity
-Imports Prism.Regions
-Imports System
-Imports System.Collections.Generic
+﻿Imports System
 Imports System.Linq
-Imports System.Text
-Imports System.Threading.Tasks
+Imports Prism.Modularity
+Imports Prism.Regions
 
 Namespace Modules.Main
     Public Class MainModule
@@ -14,7 +11,7 @@ Namespace Modules.Main
         Public Sub New(ByVal regionManager As IRegionManager)
             Me.regionManager = regionManager
         End Sub
-        Public Sub Initialize() Implements IModule.Initialize
+        Public Sub Initialize()
             regionManager.RegisterViewWithRegion("MainRegion", GetType(MainView))
         End Sub
     End Class
