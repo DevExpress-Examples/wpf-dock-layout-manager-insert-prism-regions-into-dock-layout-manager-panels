@@ -15,19 +15,17 @@
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E1926
 
-
-Imports Microsoft.VisualBasic
-Imports System
 Imports DevExpress.Xpf.Core
 
 Namespace PrismSupportSample
-	''' <summary>
-	''' Interaction logic for Window1.xaml
-	''' </summary>
-	Partial Public Class Shell
-		Inherits DXWindow
-		Public Sub New()
-			InitializeComponent()
-		End Sub
-	End Class
+    ''' <summary>
+    ''' Interaction logic for Window1.xaml
+    ''' </summary>
+    Partial Public Class Shell
+        Inherits DXWindow
+
+        Public Sub New()
+            InitializeComponent()
+        End Sub
+    End Class
 End Namespace

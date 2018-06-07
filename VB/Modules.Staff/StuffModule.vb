@@ -15,24 +15,19 @@
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E1926
 
-
-Imports Microsoft.VisualBasic
-Imports System
-Imports System.Collections.Generic
-Imports System.Linq
-Imports System.Text
-Imports Microsoft.Practices.Prism.Modularity
-Imports Microsoft.Practices.Prism.Regions
+Imports Prism.Modularity
+Imports Prism.Regions
 
 Namespace Modules.Stuff
-	Public Class StuffModule
-		Implements IModule
-		Private ReadOnly regionManager As IRegionManager
-		Public Sub New(ByVal regionManager As IRegionManager)
-			Me.regionManager = regionManager
-		End Sub
-        Public Sub Initialize() Implements IModule.Initialize
+    Public Class StuffModule
+        Implements IModule
+
+        Private ReadOnly regionManager As IRegionManager
+        Public Sub New(ByVal regionManager As IRegionManager)
+            Me.regionManager = regionManager
+        End Sub
+        Private Sub IModule_Initialize() Implements IModule.Initialize
             regionManager.RegisterViewWithRegion("StuffRegion", GetType(StuffView))
         End Sub
-	End Class
+    End Class
 End Namespace

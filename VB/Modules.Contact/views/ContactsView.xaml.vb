@@ -15,8 +15,6 @@
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E1926
 
-
-Imports Microsoft.VisualBasic
 Imports System
 Imports System.Collections.Generic
 Imports System.Linq
@@ -33,16 +31,16 @@ Imports System.Windows.Shapes
 Imports Modules.Infrastructure
 
 Namespace Modules.Contacts
-	Partial Public Class ContactsView
-		Inherits UserControl
+    Partial Public Class ContactsView
+        Inherits UserControl
 
-		Public Shared ReadOnly Property Controller() As TeamController
-			Get
-				Return TeamController.Controller
-			End Get
-		End Property
-		Public Sub New()
-			InitializeComponent()
-		End Sub
-	End Class
+        Public Shared ReadOnly Property Controller() As TeamController
+            Get
+                Return TeamController.Controller
+            End Get
+        End Property
+        Public Sub New()
+            InitializeComponent()
+        End Sub
+    End Class
 End Namespace

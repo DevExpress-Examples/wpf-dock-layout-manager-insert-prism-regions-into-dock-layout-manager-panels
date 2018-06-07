@@ -15,8 +15,6 @@
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E1926
 
-
-Imports Microsoft.VisualBasic
 Imports System
 Imports System.Collections.Generic
 Imports System.Configuration
@@ -25,15 +23,16 @@ Imports System.Linq
 Imports System.Windows
 
 Namespace PrismSupportSample
-	''' <summary>
-	''' Interaction logic for App.xaml
-	''' </summary>
-	Partial Public Class App
-		Inherits Application
-		Protected Overrides Sub OnStartup(ByVal e As StartupEventArgs)
-			MyBase.OnStartup(e)
-			Dim bootstrapper As New Bootstrapper()
-			bootstrapper.Run()
-		End Sub
-	End Class
+    ''' <summary>
+    ''' Interaction logic for App.xaml
+    ''' </summary>
+    Partial Public Class App
+        Inherits Application
+
+        Protected Overrides Sub OnStartup(ByVal e As StartupEventArgs)
+            MyBase.OnStartup(e)
+            Dim bootstrapper As New Bootstrapper()
+            bootstrapper.Run()
+        End Sub
+    End Class
 End Namespace

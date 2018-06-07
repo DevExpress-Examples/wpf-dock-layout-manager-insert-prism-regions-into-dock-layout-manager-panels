@@ -2,7 +2,7 @@
     <dxdo:DockLayoutManager x:Name="dockManager" DataContext="{Binding ElementName=list, Path=SelectedItem}">
         <dxdo:LayoutGroup>
             <dxdo:LayoutGroup Orientation="Vertical">
-                <dxdo:LayoutPanel Caption="Team list" Height="Auto" cal:RegionManager.RegionName="TeamListRegion" />
+                <dxdo:LayoutPanel Caption="Team list" cal:RegionManager.RegionName="TeamListRegion" ItemHeight="Auto" />
                 <dxdo:LayoutPanel Caption="Projects" cal:RegionManager.RegionName="ProjectsRegion" />
             </dxdo:LayoutGroup>
             <dxdo:LayoutGroup Orientation="Vertical">
