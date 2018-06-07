@@ -15,27 +15,17 @@
 // You can find sample updates and versions for different programming languages here:
 // http://www.devexpress.com/example=E1926
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using Modules.Infrastructure;
+using Prism.Modularity;
+using Prism.Regions;
 
-namespace Modules.Stuff {
-    public partial class StuffView : UserControl {
-
-        public static TeamController Controller { get { return TeamController.Controller; } }
-        public StuffView() {
-            InitializeComponent();
+namespace Modules.Staff {
+    public class StaffModule: IModule {
+        private readonly IRegionManager regionManager;
+        public StaffModule(IRegionManager regionManager) {
+            this.regionManager = regionManager;
+        }
+        void IModule.Initialize() {
+            regionManager.RegisterViewWithRegion("StaffRegion", typeof(StaffView));
         }
     }
 }

@@ -54,15 +54,15 @@ namespace Modules.Infrastructure {
             team1.TeamLead = lead1;
             team1.Projects = new List<Project>();
             team1.Projects.AddRange(new Project[] { project1, project2 });
-            team1.Stuff = new List<Person>();
-            team1.Stuff.AddRange(new Person[] { lead1, person1, person2 });
+            team1.Staff = new List<Person>();
+            team1.Staff.AddRange(new Person[] { lead1, person1, person2 });
 
             Team team2 = new Team() { TeamName = "Team 2" };
             team2.TeamLead = lead2;
             team2.Projects = new List<Project>();
             team2.Projects.AddRange(new Project[] { project3, project4 });
-            team2.Stuff = new List<Person>();
-            team2.Stuff.AddRange(new Person[] { lead2, person3, person4, person5 });
+            team2.Staff = new List<Person>();
+            team2.Staff.AddRange(new Person[] { lead2, person3, person4, person5 });
 
             List<Team> list = new List<Team>();
             list.AddRange(new Team[] { team1, team2 });
@@ -75,14 +75,14 @@ namespace Modules.Infrastructure {
         public static readonly DependencyProperty TeamNameProperty;
         public static readonly DependencyProperty TeamLeadProperty;
         public static readonly DependencyProperty ProjectsProperty;
-        public static readonly DependencyProperty StuffProperty;
+        public static readonly DependencyProperty StaffProperty;
 
         static Team() {
             Type ownerType = typeof(Team);
             TeamNameProperty = DependencyProperty.Register("TeamName", typeof(String), ownerType);
             TeamLeadProperty = DependencyProperty.Register("TeamLead", typeof(Person), ownerType);
             ProjectsProperty = DependencyProperty.Register("Projects", typeof(List<Project>), ownerType);
-            StuffProperty = DependencyProperty.Register("Stuff", typeof(List<Person>), ownerType);
+            StaffProperty = DependencyProperty.Register("Staff", typeof(List<Person>), ownerType);
         }
 
         public String TeamName {
@@ -97,9 +97,9 @@ namespace Modules.Infrastructure {
             get { return (List<Project>)GetValue(ProjectsProperty); }
             set { SetValue(ProjectsProperty, value); }
         }
-        public List<Person> Stuff {
-            get { return (List<Person>)GetValue(StuffProperty); }
-            set { SetValue(StuffProperty, value); }
+        public List<Person> Staff {
+            get { return (List<Person>)GetValue(StaffProperty); }
+            set { SetValue(StaffProperty, value); }
         }
     }
 
