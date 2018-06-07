@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modules.Contacts", "Modules
 		{AD494C01-226D-47CC-8CB5-C68E74A783B9} = {AD494C01-226D-47CC-8CB5-C68E74A783B9}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modules.Stuff", "Modules.Staff\Modules.Stuff.csproj", "{ADA3642A-8384-4532-B1EE-4F3ED8EABB00}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modules.Staff", "Modules.Staff\Modules.Staff.csproj", "{ADA3642A-8384-4532-B1EE-4F3ED8EABB00}"
 	ProjectSection(ProjectDependencies) = postProject
 		{AD494C01-226D-47CC-8CB5-C68E74A783B9} = {AD494C01-226D-47CC-8CB5-C68E74A783B9}
 	EndProjectSection
