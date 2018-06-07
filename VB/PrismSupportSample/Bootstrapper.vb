@@ -38,7 +38,7 @@ Namespace PrismSupportSample
             Dim catalog As ModuleCatalog = CType(Me.ModuleCatalog, ModuleCatalog)
             catalog.AddModule(GetType(Modules.TeamList.TeamListModule))
             catalog.AddModule(GetType(Modules.Contacts.ContactsModule))
-            catalog.AddModule(GetType(Modules.Stuff.StuffModule))
+            catalog.AddModule(GetType(Modules.Staff.StaffModule))
             catalog.AddModule(GetType(Modules.Projects.ProjectModule))
             catalog.AddModule(GetType(Modules.Chart.ChartModule))
 

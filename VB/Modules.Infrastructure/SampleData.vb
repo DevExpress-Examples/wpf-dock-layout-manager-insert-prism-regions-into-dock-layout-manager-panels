@@ -157,15 +157,15 @@ Namespace Modules.Infrastructure
             team1.TeamLead = lead1
             team1.Projects = New List(Of Project)()
             team1.Projects.AddRange(New Project() { project1, project2 })
-            team1.Stuff = New List(Of Person)()
-            team1.Stuff.AddRange(New Person() { lead1, person1, person2 })
+            team1.Staff = New List(Of Person)()
+            team1.Staff.AddRange(New Person() { lead1, person1, person2 })
 
             Dim team2 As New Team() With {.TeamName = "Team 2"}
             team2.TeamLead = lead2
             team2.Projects = New List(Of Project)()
             team2.Projects.AddRange(New Project() { project3, project4 })
-            team2.Stuff = New List(Of Person)()
-            team2.Stuff.AddRange(New Person() { lead2, person3, person4, person5 })
+            team2.Staff = New List(Of Person)()
+            team2.Staff.AddRange(New Person() { lead2, person3, person4, person5 })
 
             Dim list As New List(Of Team)()
             list.AddRange(New Team() { team1, team2 })
@@ -179,14 +179,14 @@ Namespace Modules.Infrastructure
         Public Shared ReadOnly TeamNameProperty As DependencyProperty
         Public Shared ReadOnly TeamLeadProperty As DependencyProperty
         Public Shared ReadOnly ProjectsProperty As DependencyProperty
-        Public Shared ReadOnly StuffProperty As DependencyProperty
+        Public Shared ReadOnly StaffProperty As DependencyProperty
 
         Shared Sub New()
             Dim ownerType As Type = GetType(Team)
             TeamNameProperty = DependencyProperty.Register("TeamName", GetType(String), ownerType)
             TeamLeadProperty = DependencyProperty.Register("TeamLead", GetType(Person), ownerType)
             ProjectsProperty = DependencyProperty.Register("Projects", GetType(List(Of Project)), ownerType)
-            StuffProperty = DependencyProperty.Register("Stuff", GetType(List(Of Person)), ownerType)
+            StaffProperty = DependencyProperty.Register("Staff", GetType(List(Of Person)), ownerType)
         End Sub
 
         Public Property TeamName() As String
@@ -213,12 +213,12 @@ Namespace Modules.Infrastructure
                 SetValue(ProjectsProperty, value)
             End Set
         End Property
-        Public Property Stuff() As List(Of Person)
+        Public Property Staff() As List(Of Person)
             Get
-                Return DirectCast(GetValue(StuffProperty), List(Of Person))
+                Return DirectCast(GetValue(StaffProperty), List(Of Person))
             End Get
             Set(ByVal value As List(Of Person))
-                SetValue(StuffProperty, value)
+                SetValue(StaffProperty, value)
             End Set
         End Property
     End Class

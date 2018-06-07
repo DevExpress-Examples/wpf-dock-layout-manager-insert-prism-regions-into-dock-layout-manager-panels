@@ -8,7 +8,7 @@
             <dxdo:LayoutGroup Orientation="Vertical">
                 <dxdo:TabbedGroup>
                     <dxdo:LayoutPanel Caption="Contacts" cal:RegionManager.RegionName="ContactsRegion" />
-                    <dxdo:LayoutPanel Caption="Team staff" cal:RegionManager.RegionName="StuffRegion" />
+                    <dxdo:LayoutPanel Caption="Team staff" cal:RegionManager.RegionName="StaffRegion" />
                 </dxdo:TabbedGroup>
                 <dxdo:LayoutPanel Caption="Issues history" cal:RegionManager.RegionName="ChartRegion" />
             </dxdo:LayoutGroup>

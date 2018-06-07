@@ -18,8 +18,8 @@
 Imports Prism.Modularity
 Imports Prism.Regions
 
-Namespace Modules.Stuff
-    Public Class StuffModule
+Namespace Modules.Staff
+    Public Class StaffModule
         Implements IModule
 
         Private ReadOnly regionManager As IRegionManager
@@ -27,7 +27,7 @@ Namespace Modules.Stuff
             Me.regionManager = regionManager
         End Sub
         Private Sub IModule_Initialize() Implements IModule.Initialize
-            regionManager.RegisterViewWithRegion("StuffRegion", GetType(StuffView))
+            regionManager.RegisterViewWithRegion("StaffRegion", GetType(StaffView))
         End Sub
     End Class
 End Namespace
