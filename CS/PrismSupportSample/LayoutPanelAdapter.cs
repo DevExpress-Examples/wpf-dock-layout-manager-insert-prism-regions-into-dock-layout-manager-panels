@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using DevExpress.Xpf.Docking;
-using Microsoft.Practices.Prism.Regions;
+﻿using DevExpress.Xpf.Docking;
+using Prism.Regions;
 
 namespace PrismSupportSample {
     public class LayoutPanelAdapter : RegionAdapterBase<LayoutPanel> {

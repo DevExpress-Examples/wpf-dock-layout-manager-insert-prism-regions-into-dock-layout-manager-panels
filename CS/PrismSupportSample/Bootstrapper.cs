@@ -17,10 +17,10 @@
 
 using System.Windows;
 using DevExpress.Xpf.Docking;
-using Microsoft.Practices.Prism.UnityExtensions;
-using Microsoft.Practices.Prism.Modularity;
-using Microsoft.Practices.Prism.Regions;
 using Microsoft.Practices.ServiceLocation;
+using Prism.Unity;
+using Prism.Modularity;
+using Prism.Regions;
 
 namespace PrismSupportSample {
     class Bootstrapper : UnityBootstrapper {
@@ -43,11 +43,8 @@ namespace PrismSupportSample {
         }
         protected override RegionAdapterMappings ConfigureRegionAdapterMappings() {
             RegionAdapterMappings mappings = base.ConfigureRegionAdapterMappings();
-            if(mappings != null) {
-                //mappings.RegisterMapping(typeof(DockLayoutManager), ServiceLocator.Current.GetInstance<DockManagerAdapter>());
+            if(mappings != null)
                 mappings.RegisterMapping(typeof(LayoutPanel), ServiceLocator.Current.GetInstance<LayoutPanelAdapter>());
-
-            }
             return mappings;
         } 
     }

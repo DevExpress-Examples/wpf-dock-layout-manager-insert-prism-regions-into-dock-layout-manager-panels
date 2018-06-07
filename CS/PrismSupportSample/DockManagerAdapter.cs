@@ -15,20 +15,19 @@
 // You can find sample updates and versions for different programming languages here:
 // http://www.devexpress.com/example=E1926
 
-using System.Collections.Generic;
 using System.Windows.Controls;
 using DevExpress.Xpf.Docking;
-using Microsoft.Practices.Prism.Regions;
+using Prism.Regions;
 
 namespace PrismSupportSample {
     public class DockManagerAdapter : RegionAdapterBase<DockLayoutManager> {
         public DockManagerAdapter(IRegionBehaviorFactory BehaviorFactory)
             : base(BehaviorFactory) {
         }
-        protected override Microsoft.Practices.Prism.Regions.IRegion CreateRegion() {
+        protected override IRegion CreateRegion() {
             return new SingleActiveRegion();
         }
-        protected override void Adapt(Microsoft.Practices.Prism.Regions.IRegion region, DockLayoutManager regionTarget) {
+        protected override void Adapt(IRegion region, DockLayoutManager regionTarget) {
             BaseLayoutItem[] items = regionTarget.GetItems();
             foreach(BaseLayoutItem item in items) {
                 string regionName = RegionManager.GetRegionName(item);
