@@ -90,7 +90,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="StuffModule.cs" />
+    <Compile Include="StaffModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="views\StuffView.xaml.cs">
       <DependentUpon>StuffView.xaml</DependentUpon>
