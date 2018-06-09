@@ -1,14 +1,14 @@
 ﻿using Prism.Modularity;
 using Prism.Regions;
 
-namespace Modules.Stuff {
-    public class StuffModule: IModule {
+namespace Modules.Staff {
+    public class StaffModule: IModule {
         private readonly IRegionManager regionManager;
-        public StuffModule(IRegionManager regionManager) {
+        public StaffModule(IRegionManager regionManager) {
             this.regionManager = regionManager;
         }
         void IModule.Initialize() {
-            regionManager.RegisterViewWithRegion("StuffRegion", typeof(StuffView));
+            regionManager.RegisterViewWithRegion("StaffRegion", typeof(StaffView));
         }
     }
 }

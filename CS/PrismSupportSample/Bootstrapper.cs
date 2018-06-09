@@ -20,7 +20,7 @@ namespace PrismSupportSample {
             ModuleCatalog catalog = (ModuleCatalog)this.ModuleCatalog;
             catalog.AddModule(typeof(Modules.TeamList.TeamListModule));
             catalog.AddModule(typeof(Modules.Contacts.ContactsModule));
-            catalog.AddModule(typeof(Modules.Stuff.StuffModule));
+            catalog.AddModule(typeof(Modules.Staff.StaffModule));
             catalog.AddModule(typeof(Modules.Projects.ProjectModule));
             catalog.AddModule(typeof(Modules.Chart.ChartModule));
 

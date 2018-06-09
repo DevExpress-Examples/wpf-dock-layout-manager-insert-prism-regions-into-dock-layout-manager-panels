@@ -1,6 +1,6 @@
-﻿<UserControl x:Class="Modules.Stuff.StuffView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:Modules.Stuff">
-    <Border DataContext="{x:Static local:StuffView.Controller}">
-    <ListBox ItemsSource="{Binding SelectedTeam.Stuff}" Background="{x:Null}">
+﻿<UserControl x:Class="Modules.Staff.StaffView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:Modules.Staff">
+    <Border DataContext="{x:Static local:StaffView.Controller}">
+    <ListBox ItemsSource="{Binding SelectedTeam.Staff}" Background="{x:Null}">
         <ListBox.ItemTemplate>
             <DataTemplate>
                 <StackPanel Orientation="Horizontal">
