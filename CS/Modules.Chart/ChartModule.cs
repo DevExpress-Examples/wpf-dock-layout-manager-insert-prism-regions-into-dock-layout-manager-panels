@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.Practices.Composite.Modularity;
-using Microsoft.Practices.Composite.Regions;
+﻿using Prism.Modularity;
+using Prism.Regions;
 
 namespace Modules.Chart {
     public class ChartModule: IModule {
@@ -11,7 +7,7 @@ namespace Modules.Chart {
         public ChartModule(IRegionManager regionManager) {
             this.regionManager = regionManager;
         }
-        public void Initialize() {
+        void IModule.Initialize() {
             regionManager.RegisterViewWithRegion("ChartRegion", typeof(ChartView));
         }
     }

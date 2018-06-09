@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.Practices.Composite.Modularity;
-using Microsoft.Practices.Composite.Regions;
+﻿using Prism.Modularity;
+using Prism.Regions;
 
 namespace Modules.Stuff {
     public class StuffModule: IModule {
@@ -11,7 +7,7 @@ namespace Modules.Stuff {
         public StuffModule(IRegionManager regionManager) {
             this.regionManager = regionManager;
         }
-        public void Initialize() {
+        void IModule.Initialize() {
             regionManager.RegisterViewWithRegion("StuffRegion", typeof(StuffView));
         }
     }

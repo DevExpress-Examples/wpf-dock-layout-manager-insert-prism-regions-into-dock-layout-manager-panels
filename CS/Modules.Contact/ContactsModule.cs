@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.Practices.Composite.Regions;
-using Microsoft.Practices.Composite.Modularity;
+﻿using Prism.Modularity;
+using Prism.Regions;
 
 namespace Modules.Contacts {
     public class ContactsModule : IModule {
@@ -11,7 +7,7 @@ namespace Modules.Contacts {
         public ContactsModule(IRegionManager regionManager) {
             this.regionManager = regionManager;
         }
-        public void Initialize() {
+        void IModule.Initialize() {
             regionManager.RegisterViewWithRegion("ContactsRegion", typeof(ContactsView));
         }
     }
