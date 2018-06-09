@@ -1,5 +1,7 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "PrismSupportSample", "PrismSupportSample\PrismSupportSample.vbproj", "{EA19FFAE-FF46-4FB3-953B-DC502768685E}"
 	ProjectSection(ProjectDependencies) = postProject
 		{50797623-ADCB-4B99-B48D-10EF6855184C} = {50797623-ADCB-4B99-B48D-10EF6855184C}
@@ -21,7 +23,7 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Modules.Contacts", "Modules
 		{AD494C01-226D-47CC-8CB5-C68E74A783B9} = {AD494C01-226D-47CC-8CB5-C68E74A783B9}
 	EndProjectSection
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Modules.Stuff", "Modules.Staff\Modules.Stuff.vbproj", "{ADA3642A-8384-4532-B1EE-4F3ED8EABB00}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Modules.Staff", "Modules.Staff\Modules.Staff.vbproj", "{ADA3642A-8384-4532-B1EE-4F3ED8EABB00}"
 	ProjectSection(ProjectDependencies) = postProject
 		{AD494C01-226D-47CC-8CB5-C68E74A783B9} = {AD494C01-226D-47CC-8CB5-C68E74A783B9}
 	EndProjectSection
@@ -73,5 +75,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE5F4F4B-42E8-4FE7-BCA1-22A9A4389AF4}
 	EndGlobalSection
 EndGlobal

@@ -14,8 +14,8 @@ Imports System.Windows.Navigation
 Imports System.Windows.Shapes
 Imports Modules.Infrastructure
 
-Namespace Modules.Stuff
-	Partial Public Class StuffView
+Namespace Modules.Staff
+	Partial Public Class StaffView
 		Inherits UserControl
 
 		Public Shared ReadOnly Property Controller() As TeamController
