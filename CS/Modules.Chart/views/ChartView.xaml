@@ -24,12 +24,12 @@
                         </dxc:AxisX2D>
                     </dxc:XYDiagram2D.AxisX>
                     <dxc:XYDiagram2D.Series>
-                        <dxc:AreaSeries2D DataSource="{Binding Path=IssuesData}" MarkerSize="8" Transparency="0.7" DisplayName="Issues history" ArgumentDataMember="X" ValueDataMember="Y">
+                        <dxc:AreaSeries2D DataSource="{Binding Path=Tag.IssuesData}" MarkerSize="8" Transparency="0.7" DisplayName="Issues history" ArgumentDataMember="X" ValueDataMember="Y">
                             <dxc:AreaSeries2D.Label>
                                 <dxc:SeriesLabel Visible="False" />
                             </dxc:AreaSeries2D.Label>
                         </dxc:AreaSeries2D>
-                        <dxc:AreaSeries2D DataSource="{Binding Path=BugsData}" MarkerSize="8" Transparency="0.7" DisplayName="Bugs history" ArgumentDataMember="X" ValueDataMember="Y">
+                        <dxc:AreaSeries2D DataSource="{Binding Path=Tag.BugsData}" MarkerSize="8" Transparency="0.7" DisplayName="Bugs history" ArgumentDataMember="X" ValueDataMember="Y">
                             <dxc:AreaSeries2D.Label>
                                 <dxc:SeriesLabel Visible="False" />
                             </dxc:AreaSeries2D.Label>

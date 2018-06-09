@@ -13,11 +13,11 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Modules.Infrastructure;
 
-namespace Modules.Stuff {
-    public partial class StuffView : UserControl {
+namespace Modules.Staff {
+    public partial class StaffView : UserControl {
 
         public static TeamController Controller { get { return TeamController.Controller; } }
-        public StuffView() {
+        public StaffView() {
             InitializeComponent();
         }
     }

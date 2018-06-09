@@ -1,14 +1,14 @@
 ﻿using Prism.Modularity;
 using Prism.Regions;
 
-namespace Modules.Chart {
-    public class ChartModule: IModule {
+namespace Modules.Staff {
+    public class StaffModule: IModule {
         private readonly IRegionManager regionManager;
-        public ChartModule(IRegionManager regionManager) {
+        public StaffModule(IRegionManager regionManager) {
             this.regionManager = regionManager;
         }
         void IModule.Initialize() {
-            regionManager.RegisterViewWithRegion("ChartRegion", typeof(ChartView));
+            regionManager.RegisterViewWithRegion("StaffRegion", typeof(StaffView));
         }
     }
 }

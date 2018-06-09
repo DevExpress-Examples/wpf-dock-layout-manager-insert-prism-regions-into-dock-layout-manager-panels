@@ -1,17 +1,16 @@
-﻿using System.Collections.Generic;
-using System.Windows.Controls;
+﻿using System.Windows.Controls;
 using DevExpress.Xpf.Docking;
-using Microsoft.Practices.Composite.Presentation.Regions;
+using Prism.Regions;
 
 namespace PrismSupportSample {
     public class DockManagerAdapter : RegionAdapterBase<DockLayoutManager> {
         public DockManagerAdapter(IRegionBehaviorFactory BehaviorFactory)
             : base(BehaviorFactory) {
         }
-        protected override Microsoft.Practices.Composite.Regions.IRegion CreateRegion() {
+        protected override IRegion CreateRegion() {
             return new SingleActiveRegion();
         }
-        protected override void Adapt(Microsoft.Practices.Composite.Regions.IRegion region, DockLayoutManager regionTarget) {
+        protected override void Adapt(IRegion region, DockLayoutManager regionTarget) {
             BaseLayoutItem[] items = regionTarget.GetItems();
             foreach(BaseLayoutItem item in items) {
                 string regionName = RegionManager.GetRegionName(item);
