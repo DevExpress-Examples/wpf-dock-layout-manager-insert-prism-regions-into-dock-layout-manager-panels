@@ -5,7 +5,7 @@
 
 # WPF Dock Layout Manager - Insert PRISM Regions into DockLayoutManager Panels
 
-This example defines a region at the [LayoutPanel](https://docs.devexpress.com/WPF/DevExpress.Xpf.Docking.LayoutPanel) level and insert a view from another assembly into it. To create an instance of the PRISM adapter for a [LayoutPanel](https://docs.devexpress.com/WPF/DevExpress.Xpf.Docking.LayoutPanel), use the AdapterFactory.Make method:
+This example defines a region at the [LayoutPanel](https://docs.devexpress.com/WPF/DevExpress.Xpf.Docking.LayoutPanel) level and inserts a view from another assembly into this region. To create an instance of the PRISM adapter for a [LayoutPanel](https://docs.devexpress.com/WPF/DevExpress.Xpf.Docking.LayoutPanel), use the AdapterFactory.Make method:
 
 ```cs
 mappings.RegisterMapping(typeof(LayoutPanel), AdapterFactory.Make<RegionAdapterBase<LayoutPanel>>(factory));
