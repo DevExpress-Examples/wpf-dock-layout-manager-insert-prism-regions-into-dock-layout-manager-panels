@@ -1,9 +1,8 @@
-﻿Imports System
-Imports System.Linq
 Imports Prism.Modularity
 Imports Prism.Regions
 
 Namespace Modules.Main
+
     Public Class MainModule
         Implements IModule
 
@@ -16,6 +15,7 @@ Namespace Modules.Main
         Public Sub Initialize()
             regionManager.RegisterViewWithRegion("MainRegion", GetType(MainView))
         End Sub
+
         Private Sub IModule_Initialize() Implements IModule.Initialize
             Initialize()
         End Sub

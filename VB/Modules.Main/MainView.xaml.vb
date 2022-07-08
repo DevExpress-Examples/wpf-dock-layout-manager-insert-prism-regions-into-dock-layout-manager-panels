@@ -1,16 +1,15 @@
-﻿Imports System
-Imports System.Linq
 Imports System.Windows.Controls
 
 Namespace Modules.Main
+
     ''' <summary>
     ''' Interaction logic for MainView.xaml
     ''' </summary>
-    Partial Public Class MainView
+    Public Partial Class MainView
         Inherits UserControl
 
         Public Sub New()
-            InitializeComponent()
+            Me.InitializeComponent()
         End Sub
     End Class
 End Namespace
