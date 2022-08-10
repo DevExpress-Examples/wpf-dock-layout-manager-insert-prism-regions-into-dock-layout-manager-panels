@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="Modules.Contacts.ContactsView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:Modules.Contacts">
+<UserControl x:Class="Modules.Contacts.ContactsView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:Modules.Contacts">
     <Grid DataContext="{x:Static local:ContactsView.Controller}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"></ColumnDefinition>

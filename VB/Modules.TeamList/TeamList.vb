@@ -1,4 +1,4 @@
-﻿' Developer Express Code Central Example:
+' Developer Express Code Central Example:
 ' Using DXDocking for WPF in accordance with Composite Application Guidelines
 ' 
 ' This example contains a DXDocking (http://devexpress.com/DXDocking) to Prism
@@ -14,18 +14,17 @@
 ' 
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E1926
-
-Imports System
 Imports System.Collections.Generic
-Imports System.Linq
-Imports System.Text
 Imports Modules.Infrastructure
 
 Namespace Modules.TeamList
+
     Public Class TeamList
+
         Shared Sub New()
             Teams = Modules.Infrastructure.TeamList.CreateSampleData()
         End Sub
+
         Public Shared Teams As List(Of Team)
     End Class
 End Namespace

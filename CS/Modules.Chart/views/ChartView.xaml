@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="Modules.Chart.ChartView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:Modules.Chart" xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts">
+<UserControl x:Class="Modules.Chart.ChartView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:Modules.Chart" xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts">
     <Border DataContext="{x:Static local:ChartView.Controller}">
         <dxc:ChartControl BorderBrush="Transparent" Background="Transparent" DataContext="{Binding SelectedProject}">
             <dxc:ChartControl.Diagram>

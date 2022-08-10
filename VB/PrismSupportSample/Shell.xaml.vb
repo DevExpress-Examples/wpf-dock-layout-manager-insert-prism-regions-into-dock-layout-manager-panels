@@ -1,4 +1,4 @@
-﻿' Developer Express Code Central Example:
+' Developer Express Code Central Example:
 ' Using DXDocking for WPF in accordance with Composite Application Guidelines
 ' 
 ' This example contains a DXDocking (http://devexpress.com/DXDocking) to Prism
@@ -14,18 +14,18 @@
 ' 
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E1926
-
 Imports DevExpress.Xpf.Core
 
 Namespace PrismSupportSample
+
     ''' <summary>
     ''' Interaction logic for Window1.xaml
     ''' </summary>
-    Partial Public Class Shell
+    Public Partial Class Shell
         Inherits DXWindow
 
         Public Sub New()
-            InitializeComponent()
+            Me.InitializeComponent()
         End Sub
     End Class
 End Namespace

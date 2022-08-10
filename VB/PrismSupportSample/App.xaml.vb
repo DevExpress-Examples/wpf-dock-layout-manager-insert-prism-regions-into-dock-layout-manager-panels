@@ -1,4 +1,4 @@
-﻿' Developer Express Code Central Example:
+' Developer Express Code Central Example:
 ' Using DXDocking for WPF in accordance with Composite Application Guidelines
 ' 
 ' This example contains a DXDocking (http://devexpress.com/DXDocking) to Prism
@@ -14,24 +14,19 @@
 ' 
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E1926
-
-Imports System
-Imports System.Collections.Generic
-Imports System.Configuration
-Imports System.Data
-Imports System.Linq
 Imports System.Windows
 
 Namespace PrismSupportSample
+
     ''' <summary>
     ''' Interaction logic for App.xaml
     ''' </summary>
-    Partial Public Class App
+    Public Partial Class App
         Inherits Application
 
         Protected Overrides Sub OnStartup(ByVal e As StartupEventArgs)
             MyBase.OnStartup(e)
-            Dim bootstrapper As New Bootstrapper()
+            Dim bootstrapper As Bootstrapper = New Bootstrapper()
             bootstrapper.Run()
         End Sub
     End Class

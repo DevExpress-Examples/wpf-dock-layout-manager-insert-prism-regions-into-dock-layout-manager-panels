@@ -1,4 +1,4 @@
-﻿' Developer Express Code Central Example:
+' Developer Express Code Central Example:
 ' Using DXDocking for WPF in accordance with Composite Application Guidelines
 ' 
 ' This example contains a DXDocking (http://devexpress.com/DXDocking) to Prism
@@ -14,11 +14,7 @@
 ' 
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E1926
-
 Imports System
-Imports System.Collections.Generic
-Imports System.Linq
-Imports System.Text
 Imports System.Windows
 
 Namespace Modules.Infrastructure
@@ -26,37 +22,46 @@ Namespace Modules.Infrastructure
     Public Class TeamController
         Inherits DependencyObject
 
+        Private Shared _Controller As TeamController
+
         Public Shared ReadOnly SelectedTeamProperty As DependencyProperty
+
         Public Shared ReadOnly SelectedProjectProperty As DependencyProperty
+
         Shared Sub New()
             Controller = New TeamController()
             Dim ownerType As Type = GetType(TeamController)
             SelectedTeamProperty = DependencyProperty.Register("SelectedTeam", GetType(Team), ownerType)
             SelectedProjectProperty = DependencyProperty.Register("SelectedProject", GetType(Project), ownerType)
         End Sub
-        Public Property SelectedTeam() As Team
+
+        Public Property SelectedTeam As Team
             Get
-                Return DirectCast(GetValue(SelectedTeamProperty), Team)
+                Return CType(GetValue(SelectedTeamProperty), Team)
             End Get
+
             Set(ByVal value As Team)
                 SetValue(SelectedTeamProperty, value)
             End Set
         End Property
-        Public Property SelectedProject() As Project
+
+        Public Property SelectedProject As Project
             Get
-                Return DirectCast(GetValue(SelectedProjectProperty), Project)
+                Return CType(GetValue(SelectedProjectProperty), Project)
             End Get
+
             Set(ByVal value As Project)
                 SetValue(SelectedProjectProperty, value)
             End Set
         End Property
-        Private Shared privateController As TeamController
-        Public Shared Property Controller() As TeamController
+
+        Public Shared Property Controller As TeamController
             Get
-                Return privateController
+                Return _Controller
             End Get
+
             Private Set(ByVal value As TeamController)
-                privateController = value
+                _Controller = value
             End Set
         End Property
     End Class

@@ -1,4 +1,4 @@
-﻿' Developer Express Code Central Example:
+' Developer Express Code Central Example:
 ' Using DXDocking for WPF in accordance with Composite Application Guidelines
 ' 
 ' This example contains a DXDocking (http://devexpress.com/DXDocking) to Prism
@@ -14,19 +14,21 @@
 ' 
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E1926
-
 Imports Prism.Modularity
 Imports Prism.Regions
 
 Namespace Modules.Chart
+
     Public Class ChartModule
         Implements IModule
 
         Private ReadOnly regionManager As IRegionManager
+
         Public Sub New(ByVal regionManager As IRegionManager)
             Me.regionManager = regionManager
         End Sub
-        Private Sub IModule_Initialize() Implements IModule.Initialize
+
+        Private Sub Initialize() Implements IModule.Initialize
             regionManager.RegisterViewWithRegion("ChartRegion", GetType(ChartView))
         End Sub
     End Class

@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="Modules.TeamList.TeamListView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:Modules.TeamList">
+<UserControl x:Class="Modules.TeamList.TeamListView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:Modules.TeamList">
     <StackPanel>
         <WrapPanel TextBlock.Foreground="Gray">
             <TextBlock Text="Team name" />
