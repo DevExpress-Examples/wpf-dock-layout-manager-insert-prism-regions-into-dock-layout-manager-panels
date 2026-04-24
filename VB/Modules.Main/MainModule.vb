@@ -1,5 +1,6 @@
+Imports Prism.Ioc
 Imports Prism.Modularity
-Imports Prism.Regions
+Imports Prism.Navigation.Regions
 
 Namespace Modules.Main
 
@@ -12,12 +13,11 @@ Namespace Modules.Main
             Me.regionManager = regionManager
         End Sub
 
-        Public Sub Initialize()
-            regionManager.RegisterViewWithRegion("MainRegion", GetType(MainView))
+        Public Sub RegisterTypes(containerRegistry As IContainerRegistry) Implements IModule.RegisterTypes
         End Sub
 
-        Private Sub IModule_Initialize() Implements IModule.Initialize
-            Initialize()
+        Public Sub OnInitialized(containerProvider As IContainerProvider) Implements IModule.OnInitialized
+            regionManager.RegisterViewWithRegion("MainRegion", GetType(MainView))
         End Sub
     End Class
 End Namespace
