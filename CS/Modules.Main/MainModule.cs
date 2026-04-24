@@ -1,7 +1,6 @@
-﻿using System;
-using System.Linq;
+﻿using Prism.Ioc;
 using Prism.Modularity;
-using Prism.Regions;
+using Prism.Navigation.Regions;
 
 namespace Modules.Main {
     public class MainModule : IModule {
@@ -11,11 +10,11 @@ namespace Modules.Main {
             this.regionManager = regionManager;
         }
 
-        public void Initialize() {
-            regionManager.RegisterViewWithRegion("MainRegion", typeof(MainView));
+        public void RegisterTypes(IContainerRegistry containerRegistry) {
         }
-        void IModule.Initialize() {
-            Initialize();
+
+        public void OnInitialized(IContainerProvider containerProvider) {
+            regionManager.RegisterViewWithRegion("MainRegion", typeof(MainView));
         }
     }
 }
