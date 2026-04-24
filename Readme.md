@@ -16,6 +16,7 @@ mappings.RegisterMapping(typeof(LayoutPanel), AdapterFactory.Make<RegionAdapterB
 
 <img src="https://user-images.githubusercontent.com/12169834/175358011-ac1b0321-5282-40d1-8aab-57b8948b5fd4.png" width=700px/>
 
+
 ## Documentation
 
 - [Prism Adapters](https://docs.devexpress.com/WPF/117848/common-concepts/prism-adapters)
